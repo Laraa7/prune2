@@ -1,0 +1,93 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{categoriaActual.nombre}}</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button default-href="#"></ion-back-button>
+      </ion-buttons>
+    
+    </ion-toolbar>
+  </ion-header>
+
+<div class="tarjeta">
+  <ion-card *ngFor="let item of categoriaActual.productos" [routerLink]="['/productos',item.id]">
+    <img alt="{{item.nombre}}" src="{{item.imagen}}" />
+    <ion-card-header class="header">
+      <ion-card-subtitle>  {{item.nombre}}</ion-card-subtitle>
+      <ion-card-title>${{item.precio}} </ion-card-title>
+     
+    </ion-card-header>
+
+    <ion-card-content>
+      {{item.detalle}}
+    </ion-card-content>
+  </ion-card>
+</div>
+
+
+<div class="espacio">
+
+
+</div>
+
+
+
+
+
+<footer>
+  <ion-footer>
+    <form>
+      <div class="prefooter">
+        <h2>¡Dejanos tu mail para promociones únicas!</h2><br>
+        <form action="">
+          <input class="barrita" type="text" placeholder="">
+          <button class="btnenviar" type="submit"  >Enviar</button>
+        </form>
+
+
+        <div class="footerContainer">
+
+         
+          <div class="img">
+            
+            <a><img class="medios-pago"
+                src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                alt=""></a>
+            <a><img class="medios-pago"
+                src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                alt=""></a>
+            <a><img class="medios-pago"
+                src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                alt=""></a>
+            <a><img class="medios-pago"
+                src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
+                alt=""></a>
+            <a><img class="medios-pago"
+                src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/custom@2x.png"
+                alt=""></a>
+            <a><img class="medios-pago"
+                src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png "
+                alt=""></a>
+            <a><img class="medios-pago"
+                src=" https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
+                alt=""></a>
+            <a><img class="medios-pago"
+                src=" https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png"
+                alt=""></a>
+            <a><img class="medios-pago"
+                src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/branch@2x.png" alt=""></a>
+            <a><img class="medios-pago"
+                src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/cash@2x.png"
+                alt=""></a>
+          </div>
+
+          <h2>Aceptamos todos los medios de pago</h2>
+          <h2>----Prune 2023 Todos Los derechos reservados----</h2>
+          <h2>--Terminos y condiciones--</h2>
+        </div>
+      </div>
+    </form>
+  </ion-footer>
+</footer>
+
+</ion-content>

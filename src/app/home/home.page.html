@@ -1,0 +1,166 @@
+<ion-menu menuId="menuI" contentId="main-content">  
+  <ion-title>PRUNE</ion-title>
+   <ion-content>
+ <ion-list>
+      <ion-list-header>
+        <ion-label><B>-HOME-</B></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>
+          <a class="link" [routerLink]='["/categorias","250"]'><b>ACCESORIOS</b></a></ion-label>
+        <ion-icon name="diamond-outline"></ion-icon>
+
+      </ion-item>
+      <ion-item>
+        <ion-label><a class="link" [routerLink]='["/categorias","1"]'><b>ZAPATOS</b></a></ion-label>
+
+        <ion-icon name="footsteps-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label><a class="link" [routerLink]='["/categorias","2"]'><b>CARTERAS</b></a></ion-label>
+
+        <ion-icon name="bag-outline"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <ion-label><a class="link" routerLink="/carrito"><b>CARRITO</b></a></ion-label>
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+
+  
+</ion-menu>
+<ion-header [translucent]="true">
+  <ion-title>PRUNE</ion-title>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="abrirMenuI()"><ion-icon name="menu-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+
+  <div id="main-content">
+  <ion-content [fullscreen]="true">
+      <ion-header collapse="condense">
+        <ion-title>PRUNE</ion-title>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="abrirMenuI()"><ion-icon name="menu-outline"></ion-icon></ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="principal">
+        <h2>REGISTRATE PARA NO PERDERTE NOVEDADES Y DESCUENTOS EXCLUSIVOS🤍</h2>
+      </div>
+
+      <swiper-container>
+        <swiper-slide><img src="https://i.pinimg.com/originals/0a/f5/da/0af5da807dcb090bf019805c4d23c625.jpg"
+            alt=""></swiper-slide>
+
+        <swiper-slide><img
+            src="https://i.pinimg.com/originals/19/f0/d7/19f0d711546400c8dc48e3ed5ce98b36.jpg"></swiper-slide>
+        <swiper-slide><img src="https://i.pinimg.com/originals/3b/ef/e1/3befe16d0313b609c0f1a47f1359dcc3.jpg"
+            alt=""></swiper-slide>
+      </swiper-container>
+
+
+      <section id="categorias-container">
+        <a *ngFor="let item of categorias" [ngStyle]="{'background-image':'url('+item.imgUrl+')'}"
+          [routerLink]="['/categorias',item.id]">{{item.nombre}}</a>
+      </section>
+
+
+
+
+
+
+
+
+
+      <footer>
+        <ion-footer>
+          <form>
+            <div class="prefooter">
+              <h2>¡Dejanos tu mail para promociones únicas!</h2><br>
+             <form action="">
+             <input class="barrita" type="text" placeholder="Ingrese su mail por favor">
+            <button (click)="presionarBoton()" class="btnenviar" type="submit" [ngClass]="{ 'boton-presionado': botonPresionado }">
+           Enviar
+             </button>
+
+              </form>
+
+              <div class="footerContainer">
+
+
+                <div class="img">
+
+                  <a><img class="medios-pago"
+                      src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                      alt=""></a>
+                  <a><img class="medios-pago"
+                      src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                      alt=""></a>
+                  <a><img class="medios-pago"
+                      src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                      alt=""></a>
+                  <a><img class="medios-pago"
+                      src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
+                      alt=""></a>
+                  <a><img class="medios-pago"
+                      src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/custom@2x.png"
+                      alt=""></a>
+                  <a><img class="medios-pago"
+                      src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png "
+                      alt=""></a>
+                  <a><img class="medios-pago"
+                      src=" https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
+                      alt=""></a>
+                  <a><img class="medios-pago"
+                      src=" https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png"
+                      alt=""></a>
+                  <a><img class="medios-pago"
+                      src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/branch@2x.png"
+                      alt=""></a>
+                  <a><img class="medios-pago"
+                      src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/cash@2x.png"
+                      alt=""></a>
+                </div>
+
+                <h2>Aceptamos todos los medios de pago</h2>
+                <h2>----Prune 2023 Todos Los derechos reservados----</h2>
+                <h2>--Terminos y condiciones--</h2>
+              </div>
+            </div>
+          </form>
+        </ion-footer>
+      </footer>
+
+
+    </ion-content>

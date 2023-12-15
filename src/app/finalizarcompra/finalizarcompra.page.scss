@@ -1,0 +1,54 @@
+ion-list{
+    color: black;
+   
+    font-family: century gothic;
+    font-weight: 100px;
+    
+    text-align: center;
+    margin-top: 25px;
+    
+  }
+  ion-item{
+      color: black;
+      border-radius: 10px;
+      margin: bottom 16px;
+      margin-top: 5px;
+  }
+  h1{
+      text-align: centerion;
+      color: rgb(0, 0, 0);
+      font-family: century gothic;
+      font-size: bold;
+  }
+  p{
+      color: rgb(197, 190, 190);
+      font-size: 0.9rem;
+  }
+  
+  a{
+      font-family: century gothic;
+      font-weight: 100px;
+      color: white;
+      text-align: center;
+  }
+  ion-button{
+      background-color: white;
+  
+  }
+  .agregaralcarrito{
+    background-color: black;
+    border-radius: 10px;
+    width: 290px;
+    height: 40px;
+  margin-top: 30px;
+display: inline-block;
+font-size: 15px;
+left: 50px;
+color: white;
+position: absolute;
+}
+
+.barrita{
+    border-radius: 7px;
+    color: rgb(32, 111, 137);
+}

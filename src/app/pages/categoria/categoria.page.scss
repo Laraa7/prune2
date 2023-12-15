@@ -1,0 +1,144 @@
+ion-card{
+    display: inline-block;
+    justify-content: space-around;
+    width: 150px;
+    height: 220px;
+font-size: 1px;
+border-radius: 15px;
+ 
+
+
+    img{
+       text-align: center;
+        width: 120%;
+        height: 140px;
+    }
+}
+
+text{
+    font-size: 5px;
+}
+  
+.tarjeta{
+    left: 33px;
+    font-size: 10%;
+  
+}
+
+
+
+
+.imagenes{
+    text-align: center;
+    display: flex;
+    
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+footer{
+
+
+    h2{
+       color:#f8f5f6;
+        text-align: center;
+        padding: 5px;
+        font-size: 13px;
+        margin: 0px;
+        font-family: century gothic;
+    
+    }
+    }
+    h3{
+        color:rgb(3, 3, 3)e;
+        text-align: left;
+        padding: 5px;
+        font-size: 0px;
+        margin: 0px;
+        font-family: century gothic;
+    }
+    .medios-pago{  
+       
+        border: 1px solid white;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        width: auto;
+        max-height: 50px;
+        margin: 1px;
+        padding: 5px;
+        border: 1px;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 25px;
+    
+    }
+    
+    
+    
+    .ion-footer{
+            border-top: 1px solid;
+            background: #942626;
+            width: 100%;
+            justify-content: center;
+            box-sizing: inherit;
+            text-align: center;
+            list-style-type:disc;
+            position: absolute;
+            align-items: center;
+       
+    }
+    
+    
+    .footerContainer{
+        width: 100%;
+        padding: 80px 0;
+        display: contents;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-radius: 50px;
+        background-position: center;
+        text-align: center;
+        text-decoration:none;
+        margin: 10px;
+        border-radius: 50%;
+        margin: 0%;
+        flex-direction:row;
+        box-sizing: inherit;
+    }
+    footer{
+       padding-bottom: 50px;
+       background-color: rgb(0, 0, 0);
+       align-items: center;
+       display: inline-block;
+       padding: 10px;
+       border: radius 50%;
+       text-align: center;
+       
+    
+    }
+
+
+    .btnenviar{
+
+        background-color: #5c5454;
+        color: #f5f5f5;
+        border-radius: 10px;
+        margin: 5px;
+        width: 55px;
+        height: 40px;
+    }
+    
+    .barrita{
+        border-radius: 7px;
+    }
+    
+
+
+    .espacio{
+        padding: 60px;
+      }

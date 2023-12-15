@@ -1,0 +1,7 @@
+{
+  "name": "Prune",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
